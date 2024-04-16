@@ -56,7 +56,7 @@ while True:
         # check if user wants another calculation
         # break the while loop if answer is no
         next_calculation = input("Calculate again? (Y/N): ")
-        if next_calculation == "N": #was no by Rohit, changed to N to work from previous line
+        if next_calculation == "N": #was no, changed to N to work from previous line
           break
     else:
         print("Invalid Input")
@@ -69,6 +69,4 @@ while True:
 v2
 2024-04-16 15:59:5
 45.990 [info] > git show --textconv :README.md [22ms]
-  git config --global user.email "orlacn@gmail.com"
-  git config --global user.name "maviglass"
 '''
