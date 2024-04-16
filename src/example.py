@@ -14,19 +14,24 @@ def multiplication(x, y):
 def division(x, y):
     return x / y
 
+# This function exponentials two numbers
+def exponential(x, y):
+    return x / y
+
 
 print("Select operation.")
 print("1.Add")
 print("2.Subtract")
 print("3.Multiply")
 print("4.Divide")
+print("5.Exponential")
 
 while True:
     # accept input from the user
-    selection = int(input("Enter operation to compute(1/2/3/4): "))
+    selection = int(input("Enter operation to compute(1/2/3/4/5): "))
     print(type(selection))
     # check if the input is one of the options
-    if selection in (1, 2, 3, 4):
+    if selection in (1, 2, 3, 4, 5):
         try:
             num1 = float(input("Enter first number: "))
             num2 = float(input("Enter second number: "))
@@ -46,10 +51,24 @@ while True:
         elif selection == 4:
             print(num1, "/", num2, "=", division(num1, num2))
         
+        elif selection == 5:
+            print(num1, "** to the power of", num2, "=", pow(num1, num2))
         # check if user wants another calculation
         # break the while loop if answer is no
         next_calculation = input("Calculate again? (Y/N): ")
-        if next_calculation == "no":
+        if next_calculation == "N": #was no by Rohit, changed to N to work from previous line
           break
     else:
         print("Invalid Input")
+
+
+'''task is:
+• tocreateanewfunctionforcalculatingexponentialvalues 
+• Add the option to print in the Printing section
+• Add a case for accepting the user input and carrying out the operations
+v2
+2024-04-16 15:59:5
+45.990 [info] > git show --textconv :README.md [22ms]
+  git config --global user.email "orlacn@gmail.com"
+  git config --global user.name "maviglass"
+'''
